@@ -1,12 +1,12 @@
 enum combo_events{
 ARTSEY_H,
 ARTSEY_Q,
-ARTSEY_U,
+ARTSEY_O,
 ARTSEY_C,
-ARTSEY_K,
+ARTSEY_Y,
 ARTSEY_B,
 ARTSEY_W,
-ARTSEY_N,
+ARTSEY_S,
 ARTSEY_F,
 ARTSEY_X,
 ARTSEY_J,
@@ -62,12 +62,12 @@ COMBO_LENGTH
 uint16_t COMBO_LEN = COMBO_LENGTH;
 const uint16_t PROGMEM artsey_h[] = {BASE_2_4,BASE_2_2,COMBO_END};
 const uint16_t PROGMEM artsey_q[] = {BASE_1_4,BASE_1_2,BASE_1_1,COMBO_END};
-const uint16_t PROGMEM artsey_u[] = {BASE_2_3,BASE_2_2,COMBO_END};
+const uint16_t PROGMEM artsey_o[] = {BASE_2_3,BASE_2_2,COMBO_END};
 const uint16_t PROGMEM artsey_c[] = {BASE_2_4,BASE_2_3,COMBO_END};
-const uint16_t PROGMEM artsey_k[] = {BASE_2_3,BASE_2_1,COMBO_END};
+const uint16_t PROGMEM artsey_y[] = {BASE_2_3,BASE_2_1,COMBO_END};
 const uint16_t PROGMEM artsey_b[] = {BASE_2_4,BASE_2_1,COMBO_END};
 const uint16_t PROGMEM artsey_w[] = {BASE_1_4,BASE_1_1,COMBO_END};
-const uint16_t PROGMEM artsey_n[] = {BASE_2_2,BASE_2_1,COMBO_END};
+const uint16_t PROGMEM artsey_s[] = {BASE_2_2,BASE_2_1,COMBO_END};
 const uint16_t PROGMEM artsey_f[] = {BASE_1_4,BASE_1_3,COMBO_END};
 const uint16_t PROGMEM artsey_x[] = {BASE_1_3,BASE_1_2,BASE_1_1,COMBO_END};
 const uint16_t PROGMEM artsey_j[] = {BASE_1_2,BASE_1_1,COMBO_END};
@@ -121,12 +121,12 @@ const uint16_t PROGMEM artsey_0[] = {NUM_2_2,NUM_2_3,COMBO_END};
 combo_t key_combos[] = {
 [ARTSEY_H] = COMBO_ACTION(artsey_h),
 [ARTSEY_Q] = COMBO_ACTION(artsey_q),
-[ARTSEY_U] = COMBO_ACTION(artsey_u),
+[ARTSEY_O] = COMBO_ACTION(artsey_o),
 [ARTSEY_C] = COMBO_ACTION(artsey_c),
-[ARTSEY_K] = COMBO_ACTION(artsey_k),
+[ARTSEY_Y] = COMBO_ACTION(artsey_y),
 [ARTSEY_B] = COMBO_ACTION(artsey_b),
 [ARTSEY_W] = COMBO_ACTION(artsey_w),
-[ARTSEY_N] = COMBO_ACTION(artsey_n),
+[ARTSEY_S] = COMBO_ACTION(artsey_s),
 [ARTSEY_F] = COMBO_ACTION(artsey_f),
 [ARTSEY_X] = COMBO_ACTION(artsey_x),
 [ARTSEY_J] = COMBO_ACTION(artsey_j),
@@ -186,13 +186,13 @@ break;
 case ARTSEY_Q:
 if (pressed) {SEND_STRING("q");}
 break;
-case ARTSEY_U:
+case ARTSEY_O:
 if (pressed) {SEND_STRING("o");}
 break;
 case ARTSEY_C:
 if (pressed) {SEND_STRING("c");}
 break;
-case ARTSEY_K:
+case ARTSEY_Y:
 if (pressed) {SEND_STRING("y");}
 break;
 case ARTSEY_B:
@@ -201,7 +201,7 @@ break;
 case ARTSEY_W:
 if (pressed) {SEND_STRING("w");}
 break;
-case ARTSEY_N:
+case ARTSEY_S:
 if (pressed) {SEND_STRING("s");}
 break;
 case ARTSEY_F:
